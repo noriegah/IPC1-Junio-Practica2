@@ -155,3 +155,9 @@ public final class Practica2J {
         contadoresPeliculaCategoria[7]+=1;
     } 
 }
+
+    public void MostrarPeliculas(){
+        for (int i=1; i<=contadorPelisag; i++){
+        System.out.println("-ID:"+idP[i]+" -Nombre:"+nombreP[i]+" -Ano de Estreno:"+anoP[i]+" -Categoria:"+categoria[i]);
+        }
+    }
