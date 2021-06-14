@@ -12,17 +12,17 @@ public final class Practica2J {
     int telefonoC[]=new int[20];
     boolean [] tienePeliculaPrestada=new boolean[20];
     
-    //Peliculas para 10
-    int idP[]=new int[10];
+    //Peliculas para 20
+    int idP[]=new int[20];
     String nombreP[]={"z","z","z","z","z","z","z","z","z","z","z","z","z","z","z","z","z","z","z","z"};
-    int anoP[]=new int[10];
-    String categoria[]=new String[10];
-    boolean disponibleP[]=new boolean[10];
+    int anoP[]=new int[20];
+    String categoria[]=new String[20];
+    boolean disponibleP[]=new boolean[20];
 
     //Prestamo Peliculas
-    int idPrestada[]=new int[15];
-    int idClientePresto[]=new int[15];
-    int dias[]=new int[15];
+    int idPrestada[]=new int[20];
+    int idClientePresto[]=new int[20];
+    int dias[]=new int[20];
     int seleccionMenu;
     int contadorPelisag=0;
     int contadorClientesag=0;
