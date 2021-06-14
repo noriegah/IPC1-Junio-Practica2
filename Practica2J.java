@@ -24,6 +24,11 @@ public final class Practica2J {
     int idClientePresto[]=new int[15];
     int dias[]=new int[15];
     int seleccionMenu;
+    int contadorPelisag=0;
+    int contadorClientesag=0;
+    int []controlP=new int[20];
+    int[] contadoresPeliculaCategoria=new int[20];
+    int vPrestada[]=new int[20];
 
     public Practica2J(){
         ImpresionMenu();
@@ -45,4 +50,45 @@ public final class Practica2J {
         System.out.println("    9. SALIR");
         System.out.println("Ingrese el numero de opcion que desea ejecutar");
         seleccionMenu = entrada.nextInt();
+
+        switch(seleccionMenu){
+            case 1:
+                                System.out.println("---------PRESTAMO DE PELICULAS----------");
+                                PrestamoPeliculas();
+                break;
+            case 2:
+                                System.out.println("---------DEVOLUCION DE PELICULAS--------");
+                                DevolucionPeliculas();
+                break;
+            case 3:
+                                System.out.println("----------MOSTRAR PELICULAS-------------");
+                                MostrarPeliculas();
+                break;
+            case 4:
+                                System.out.println("----------INGRESAR PELICULA-------------");
+                                IngresarPeliculas();
+                break;
+            case 5:
+                                System.out.println("----------ORDENAR-----------------------");
+				Ordenar();
+                break;
+            case 6:
+                                System.out.println("-------INGRESAR CLIENTE-----------------");
+                                IngresarClientes();
+                break;
+            case 7:
+                                System.out.println("-------MOSTRAR CLIENTES-----------------");
+                                MostrarClientes();
+                break;
+            case 8:
+                                System.out.println("------------REPORTES--------------------");
+				Reportes();
+                break;
+            case 9:
+                banderaMenu=0;
+                                System.out.println("-------VUELVA PRONTO----------------");
+                break;
+            default: System.out.println("El dato ingresado no esta dentro del numero de opciones");
+        }
+        }while(banderaMenu!=0);
 }
