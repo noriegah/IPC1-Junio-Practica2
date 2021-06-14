@@ -198,6 +198,25 @@ public final class Practica2J {
        }
     }
 
+    public void DevolucionPeliculas(){
+        System.out.println("Ingrese el ID del cliente");
+        int cliente=entrada.nextInt();
+        if (tienePeliculaPrestada[cliente]==true){
+            System.out.println("---LISTA DE PELICULAS PRESTADAS");
+            for(int i=1; i<=contadorPelisag; i++){
+                if(disponibleP[i]==true){
+                    System.out.println("-ID:"+idP[i]+" -Pelicula:"+nombreP[i]+" -Cliente:"+nombreC[controlP[i]]);
+                }
+            }
+        System.out.println("Ingrese el ID de a pelicula que desea Devolver");
+        int devolver=entrada.nextInt();
+        disponibleP[devolver]=false;
+        tienePeliculaPrestada[cliente]=false;
+        }else{
+            System.out.println("El cliente no tiene ninguna pelicula para devolver");
+        }
+    }
+
 
 
 
