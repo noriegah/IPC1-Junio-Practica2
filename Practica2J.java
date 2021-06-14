@@ -169,7 +169,10 @@ public final class Practica2J {
     }
 
     public void Ordenar(){
- 	//aqui va metodo burbuja o otro
+        Arrays.sort(nombreP);
+        for (int i=0; i<nombreP.length; i++){
+             System.out.println(nombreP[i]);
+        }
     }
 
 
