@@ -217,6 +217,16 @@ public final class Practica2J {
         }
     }
 
+    public void Reportes(){
+        //numero de peliculas por categoria
+        System.out.println("-----------REPORTES-----------");
+        System.out.println("  1. Cantidad de Peliculas por Categoria");
+        System.out.println("  2. Peliculas de una Categoria en Especifico");
+        System.out.println("  3. Cantidad de veces que se ha prestado una pelicula");
+        System.out.println("  4. Pelicula mas y menos prestada");
+        System.out.println(" Ingrese el numero de opcion que desea ejecutar");
+        int banderaR=entrada.nextInt();
+	}
 
 
 
