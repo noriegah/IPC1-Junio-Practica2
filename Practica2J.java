@@ -226,7 +226,99 @@ public final class Practica2J {
         System.out.println("  4. Pelicula mas y menos prestada");
         System.out.println(" Ingrese el numero de opcion que desea ejecutar");
         int banderaR=entrada.nextInt();
-	}
+        switch(banderaR){
+            case 1:    
+                System.out.println("Numero de peliculas de Historia"+contadoresPeliculaCategoria[0]);
+                System.out.println("Numero de Peliculas de Comedia"+contadoresPeliculaCategoria[1]);
+                System.out.println("Numero de Peliculas de Drama"+contadoresPeliculaCategoria[2]);
+                System.out.println("Numero de peliculas de Fantasia"+contadoresPeliculaCategoria[3]);
+                System.out.println("Numero de peliculas de Accion"+contadoresPeliculaCategoria[4]);
+                System.out.println("Numero de peliculas de Ciencia Ficcion"+contadoresPeliculaCategoria[5]);
+                System.out.println("Numero de peliculas Animadas"+contadoresPeliculaCategoria[6]);
+                System.out.println("Numero de peliculas de Terror"+contadoresPeliculaCategoria[7]);
+                break;
+            case 2:
+                System.out.println("Ingrese el numero de Categoria que desea ver");
+                System.out.println(" 1. Historia");
+                System.out.println(" 2. Comedia");
+                System.out.println(" 3. Drama");
+                System.out.println(" 4. Fantasia");
+                System.out.println(" 5. Accion");
+                System.out.println(" 6. Ciencia Ficcion");
+                System.out.println(" 7. Animada");
+                System.out.println(" 8. Terror");
+                int selec=entrada.nextInt();
+                switch(selec){
+                    case 1:
+                    for(int i=0; i<=contadorPelisag; i++){
+                        if("Historia".equals(categoria[i]) || "historia".equals(categoria[i])){
+                            System.out.println("-ID:"+idP[i]+" -Nombre:"+nombreP[i]+" -Ano de Estreno:"+anoP[i]+" -Categoria:"+categoria[i]);
+                        } 
+                    }
+                        break;
+                    case 2:
+                        for(int i=0; i<=contadorPelisag; i++){
+                        if("Comedia".equals(categoria[i]) || "comedia".equals(categoria[i])){
+                            System.out.println("-ID:"+idP[i]+" -Nombre:"+nombreP[i]+" -Ano de Estreno:"+anoP[i]+" -Categoria:"+categoria[i]);
+                        } 
+                    }
+                        break;
+                    case 3:
+                        for(int i=0; i<=contadorPelisag; i++){
+                        if("Drama".equals(categoria[i]) || "drama".equals(categoria[i])){
+                            System.out.println("-ID:"+idP[i]+" -Nombre:"+nombreP[i]+" -Ano de Estreno:"+anoP[i]+" -Categoria:"+categoria[i]);
+                        } 
+                    }
+                        break;
+                    case 4:
+                        for(int i=0; i<=contadorPelisag; i++){
+                        if("Fantasia".equals(categoria[i]) || "fantasia".equals(categoria[i])){
+                            System.out.println("-ID:"+idP[i]+" -Nombre:"+nombreP[i]+" -Ano de Estreno:"+anoP[i]+" -Categoria:"+categoria[i]);
+                        } 
+                    }
+                        break;
+                    case 5:
+                        for(int i=0; i<=contadorPelisag; i++){
+                        if("Accion".equals(categoria[i]) || "accion".equals(categoria[i])){
+                            System.out.println("-ID:"+idP[i]+" -Nombre:"+nombreP[i]+" -Ano de Estreno:"+anoP[i]+" -Categoria:"+categoria[i]);
+                        } 
+                    }
+                        break;
+                    case 6:
+                        for(int i=0; i<=contadorPelisag; i++){
+                        if("Ciencia ficcion".equals(categoria[i]) || "ciencia ficcion".equals(categoria[i])){
+                            System.out.println("-ID:"+idP[i]+" -Nombre:"+nombreP[i]+" -Ano de Estreno:"+anoP[i]+" -Categoria:"+categoria[i]);
+                        } 
+                    }
+                        break;
+                    case 7:
+                        for(int i=0; i<=contadorPelisag; i++){
+                        if("Animada".equals(categoria[i]) || "animada".equals(categoria[i])){
+                            System.out.println("-ID:"+idP[i]+" -Nombre:"+nombreP[i]+" -Ano de Estreno:"+anoP[i]+" -Categoria:"+categoria[i]);
+                        } 
+                    }
+                        break;
+                    case 8:
+                        for(int i=0; i<=contadorPelisag; i++){
+                        if("Terror".equals(categoria[i]) || "terror".equals(categoria[i])){
+                            System.out.println("-ID:"+idP[i]+" -Nombre:"+nombreP[i]+" -Ano de Estreno:"+anoP[i]+" -Categoria:"+categoria[i]);
+                        } 
+                    }
+                        break;
+                }
+                break;
+            case 3:
+                for(int i=1; i<=contadorPelisag;i++){
+                    System.out.println("-Nombre:"+nombreP[i]+" ha sido prestada:"+vPrestada[i]+" veces.");
+                }
+                break;
+            case 4:
+                break;
+            default: System.out.println("El numero ingresado no esta dentro de las opciones");
+        }
+    }
+}
+	
 
 
 
