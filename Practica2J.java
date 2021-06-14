@@ -92,3 +92,66 @@ public final class Practica2J {
         }
         }while(banderaMenu!=0);
 }
+
+    public void IngresarClientes(){
+        int indice;//indice sera num id cliente
+        System.out.println("Ingrese Numero de ID");
+        indice=entrada.nextInt();
+        idC[indice]=indice;
+        entrada.nextLine();
+        System.out.println("Ingrese el Nombre del Cliente");
+        nombreC[indice]=entrada.nextLine();
+        System.out.println("Ingrese numero de Telefono");
+        telefonoC[indice]=entrada.nextInt();
+        tienePeliculaPrestada[indice]=false;
+        contadorClientesag+=1;
+    }
+    
+    public void IngresarPeliculas(){
+    int indice; //indice sera num id de pelicula
+    System.out.println("Ingrese Numero ID de pelicula");
+    indice=entrada.nextInt();
+    entrada.nextLine();
+    idP[indice]=indice;
+    System.out.println("Ingrese el Nombre de la Pelicula");
+    nombreP[indice]=entrada.nextLine();
+    System.out.println("Ingrese el ano de estreno de la Pelicula");
+    anoP[indice]=entrada.nextInt();
+    entrada.nextLine();
+    System.out.println("Ingrese el nombre de la Categoria a la que pertenece");
+    System.out.println("  Historia");
+    System.out.println("  Comedia ");
+    System.out.println("  Drama");
+    System.out.println("  Fantasia");
+    System.out.println("  Accion");
+    System.out.println("  Ciencia ficcion");
+    System.out.println("  Animada");
+    System.out.println("  Terror");
+    categoria[indice]=entrada.nextLine();
+    disponibleP[indice]=false;
+    contadorPelisag+=1;
+    if("Historia".equals(categoria[indice]) || "historia".equals(categoria[indice])){
+        contadoresPeliculaCategoria[0]+=1;
+    } 
+    if("Comedia".equals(categoria[indice]) || "comedia".equals(categoria[indice])){
+        contadoresPeliculaCategoria[1]+=1;
+    } 
+    if("Drama".equals(categoria[indice]) || "drama".equals(categoria[indice])){
+        contadoresPeliculaCategoria[2]+=1;
+    } 
+    if("Fantasia".equals(categoria[indice]) || "fantasia".equals(categoria[indice])){
+        contadoresPeliculaCategoria[3]+=1;
+    } 
+    if("Accion".equals(categoria[indice]) || "accion".equals(categoria[indice])){
+        contadoresPeliculaCategoria[4]+=1;
+    } 
+    if("ciencia ficcion".equals(categoria[indice]) || "Ciencia ficcion".equals(categoria[indice])){
+        contadoresPeliculaCategoria[5]+=1;
+    } 
+    if("Animada".equals(categoria[indice]) || "animada".equals(categoria[indice])){
+        contadoresPeliculaCategoria[6]+=1;
+    } 
+    if("Terror".equals(categoria[indice]) || "terror".equals(categoria[indice])){
+        contadoresPeliculaCategoria[7]+=1;
+    } 
+}
