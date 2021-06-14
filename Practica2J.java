@@ -91,6 +91,7 @@ public final class Practica2J {
             default: System.out.println("El dato ingresado no esta dentro del numero de opciones");
         }
         }while(banderaMenu!=0);
+	System.out.println("\n\n");
 }
 
     public void IngresarClientes(){
@@ -105,6 +106,7 @@ public final class Practica2J {
         telefonoC[indice]=entrada.nextInt();
         tienePeliculaPrestada[indice]=false;
         contadorClientesag+=1;
+	System.out.println("\n\n");
     }
     
     public void IngresarPeliculas(){
@@ -119,14 +121,14 @@ public final class Practica2J {
     anoP[indice]=entrada.nextInt();
     entrada.nextLine();
     System.out.println("Ingrese el nombre de la Categoria a la que pertenece");
-    System.out.println("  Historia");
-    System.out.println("  Comedia ");
-    System.out.println("  Drama");
-    System.out.println("  Fantasia");
-    System.out.println("  Accion");
-    System.out.println("  Ciencia ficcion");
-    System.out.println("  Animada");
-    System.out.println("  Terror");
+    System.out.println("  -Historia");
+    System.out.println("  -Comedia ");
+    System.out.println("  -Drama");
+    System.out.println("  -Fantasia");
+    System.out.println("  -Accion");
+    System.out.println("  -Ciencia ficcion");
+    System.out.println("  -Animada");
+    System.out.println("  -Terror");
     categoria[indice]=entrada.nextLine();
     disponibleP[indice]=false;
     contadorPelisag+=1;
@@ -154,18 +156,21 @@ public final class Practica2J {
     if("Terror".equals(categoria[indice]) || "terror".equals(categoria[indice])){
         contadoresPeliculaCategoria[7]+=1;
     } 
+System.out.println("\n\n");
 }
 
     public void MostrarPeliculas(){
         for (int i=1; i<=contadorPelisag; i++){
         System.out.println("-ID:"+idP[i]+" -Nombre:"+nombreP[i]+" -Ano de Estreno:"+anoP[i]+" -Categoria:"+categoria[i]);
         }
+        System.out.println("\n\n");
     }
 
     public void MostrarClientes(){
         for (int k=1; k<=contadorClientesag; k++){
             System.out.println("-ID:"+idC[k]+" -Nombre:"+nombreC[k]+" -Télefono:"+telefonoC[k]);
         }
+	System.out.println("\n\n");
     }
 
     public void Ordenar(){
@@ -173,6 +178,7 @@ public final class Practica2J {
         for (int i=0; i<nombreP.length; i++){
              System.out.println(nombreP[i]);
         }
+	System.out.println("\n\n");
     }
 
     public void PrestamoPeliculas(){
@@ -196,6 +202,7 @@ public final class Practica2J {
        }else{
            System.out.println("El Cliente ya tiene actualmente una pelicula prestada");
        }
+	System.out.println("\n\n");
     }
 
     public void DevolucionPeliculas(){
@@ -215,6 +222,7 @@ public final class Practica2J {
         }else{
             System.out.println("El cliente no tiene ninguna pelicula para devolver");
         }
+	System.out.println("\n\n");
     }
 
     public void Reportes(){
@@ -316,6 +324,7 @@ public final class Practica2J {
                 break;
             default: System.out.println("El numero ingresado no esta dentro de las opciones");
         }
+	System.out.println("\n\n");
     }
 }
 	
