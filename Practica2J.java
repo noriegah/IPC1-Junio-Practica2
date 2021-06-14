@@ -161,9 +161,17 @@ public final class Practica2J {
         System.out.println("-ID:"+idP[i]+" -Nombre:"+nombreP[i]+" -Ano de Estreno:"+anoP[i]+" -Categoria:"+categoria[i]);
         }
     }
+
     public void MostrarClientes(){
         for (int k=1; k<=contadorClientesag; k++){
             System.out.println("-ID:"+idC[k]+" -Nombre:"+nombreC[k]+" -Télefono:"+telefonoC[k]);
         }
     }
+
+    public void Ordenar(){
+ 	//aqui va metodo burbuja o otro
+    }
+
+
+
 }
