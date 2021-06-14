@@ -6,11 +6,11 @@ public final class Practica2J {
 }
     Scanner entrada = new Scanner(System.in);
     
-    //clientes para 10
-    String[] nombreC=new String[10];
-    int idC[]=new int[10];
-    int telefonoC[]=new int[10];
-    boolean [] tienePeliculaPrestada=new boolean[10];
+    //clientes para 20
+    String[] nombreC=new String[20];
+    int idC[]=new int[20];
+    int telefonoC[]=new int[20];
+    boolean [] tienePeliculaPrestada=new boolean[20];
     
     //Peliculas para 10
     int idP[]=new int[10];
