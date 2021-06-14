@@ -175,6 +175,35 @@ public final class Practica2J {
         }
     }
 
+    public void PrestamoPeliculas(){
+        System.out.println("Ingrese el ID del cliente");
+        int cliente=entrada.nextInt();
+       if(tienePeliculaPrestada[cliente]==false){
+           System.out.println("---LISTA DE PELICULAS DISPONIBLES-----");
+        for (int i=1; i<=contadorPelisag; i++){
+            if (disponibleP[i]==false){
+              System.out.println("-ID:"+idP[i]+" -Nombre:"+nombreP[i]+" -Ano de Estreno:"+anoP[i]+" -Categoria:"+categoria[i]);  
+            }
+        }
+    System.out.println("Ingrese el ID de la pelicula que desea Prestar");
+    int prestar=entrada.nextInt();
+    disponibleP[prestar]=true;
+    System.out.println("Ingrese la cantidad de días que la tendra");
+    dias[prestar]=entrada.nextInt();
+    tienePeliculaPrestada[cliente]=true;
+    controlP[prestar]=cliente;
+    vPrestada[prestar]+=1;
+       }else{
+           System.out.println("El Cliente ya tiene actualmente una pelicula prestada");
+       }
+    }
+
+
+
+
+
+
+
 
 
 }
